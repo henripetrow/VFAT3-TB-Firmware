@@ -2,6 +2,8 @@
 Firmware for the VFAT3 verification platform.
 
 - Support for the use of external ADC for calibration routines.
+  - ADC CH0 should be connected to Vmon.
+  - ADC CH1 should be connected to GND
 
 - Ease of switching between VBv2 and VBv3
   - Comment/uncomment I2C pins in kc705_VBv1.xcd
