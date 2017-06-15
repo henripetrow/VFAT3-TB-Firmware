@@ -1,0 +1,1 @@
+--relax --debug typical --mt auto -L work -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot ser_8 work.ser_8 work.glbl -log elaborate.log

@@ -1,0 +1,2 @@
+fifo_rx.v,verilog,work,../../../../vfat3_testing_firmware.srcs/sources_1/ip/fifo_rx/sim/fifo_rx.v,
+glbl.v,Verilog,work,glbl.v

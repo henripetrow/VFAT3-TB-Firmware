@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="dser_8_synth_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1496139390">
+  <File Type="RDS-UTIL-PB" Name="dser_8_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="dser_8.dcp"/>
+  <File Type="RDS-UTIL" Name="dser_8_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="dser_8_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="dser_8.vds"/>
+  <File Type="VDS-TIMING-PB" Name="dser_8_timing_summary_synth.pb"/>
+  <File Type="PA-TCL" Name="dser_8.tcl"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="dser_8_timing_summary_synth.rpt"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/dser_8">
+    <File Path="$PSRCDIR/sources_1/ip/dser_8/dser_8.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Vivado/VFAT3-Testbench_hybrid+I2C/Firmware/firmware_v2016.2/firmware_v2016.2.srcs/sources_1/ip/dser_8/dser_8.xci"/>
+        <Attr Name="ImportTime" Val="1493628628"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="dser_8"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/dser_8">
+    <File Path="$PSRCDIR/sources_1/ip/dser_8/dser_8.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Vivado/VFAT3-Testbench_hybrid+I2C/Firmware/firmware_v2016.2/firmware_v2016.2.srcs/sources_1/ip/dser_8/dser_8.xci"/>
+        <Attr Name="ImportTime" Val="1493628628"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="dser_8"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

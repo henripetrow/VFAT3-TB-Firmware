@@ -1,0 +1,6 @@
+xpm_cdc.sv,systemverilog,xil_defaultlib,D:/Xilinx/Vivado/2016.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv,
+xpm_memory.sv,systemverilog,xil_defaultlib,D:/Xilinx/Vivado/2016.3/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv,
+xpm_VCOMP.vhd,vhdl,xpm,D:/Xilinx/Vivado/2016.3/data/ip/xpm/xpm_VCOMP.vhd,
+dser_8_selectio_wiz.v,verilog,work,../../../../firmware_v2016.2.srcs/sources_1/ip/dser_8/dser_8_selectio_wiz.v,
+dser_8.v,verilog,work,../../../../firmware_v2016.2.srcs/sources_1/ip/dser_8/dser_8.v,
+glbl.v,Verilog,work,glbl.v

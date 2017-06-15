@@ -1,0 +1,29 @@
+# compile verilog/system verilog design source files
+sv work  "C:/EDA/Xilinx/v2016_2/Vivado/2016.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" --include "../../../firmware_v2016.2.ip_user_files/ipstatic/JRFirmware/firmware_v2016.2/firmware_v2016.2.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_v5_3_1"
+sv work  "C:/EDA/Xilinx/v2016_2/Vivado/2016.2/data/ip/xpm/xpm_memory/hdl/xpm_memory_base.sv" --include "../../../firmware_v2016.2.ip_user_files/ipstatic/JRFirmware/firmware_v2016.2/firmware_v2016.2.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_v5_3_1"
+sv work  "C:/EDA/Xilinx/v2016_2/Vivado/2016.2/data/ip/xpm/xpm_memory/hdl/xpm_memory_dpdistram.sv" --include "../../../firmware_v2016.2.ip_user_files/ipstatic/JRFirmware/firmware_v2016.2/firmware_v2016.2.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_v5_3_1"
+sv work  "C:/EDA/Xilinx/v2016_2/Vivado/2016.2/data/ip/xpm/xpm_memory/hdl/xpm_memory_dprom.sv" --include "../../../firmware_v2016.2.ip_user_files/ipstatic/JRFirmware/firmware_v2016.2/firmware_v2016.2.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_v5_3_1"
+sv work  "C:/EDA/Xilinx/v2016_2/Vivado/2016.2/data/ip/xpm/xpm_memory/hdl/xpm_memory_sdpram.sv" --include "../../../firmware_v2016.2.ip_user_files/ipstatic/JRFirmware/firmware_v2016.2/firmware_v2016.2.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_v5_3_1"
+sv work  "C:/EDA/Xilinx/v2016_2/Vivado/2016.2/data/ip/xpm/xpm_memory/hdl/xpm_memory_spram.sv" --include "../../../firmware_v2016.2.ip_user_files/ipstatic/JRFirmware/firmware_v2016.2/firmware_v2016.2.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_v5_3_1"
+sv work  "C:/EDA/Xilinx/v2016_2/Vivado/2016.2/data/ip/xpm/xpm_memory/hdl/xpm_memory_sprom.sv" --include "../../../firmware_v2016.2.ip_user_files/ipstatic/JRFirmware/firmware_v2016.2/firmware_v2016.2.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_v5_3_1"
+sv work  "C:/EDA/Xilinx/v2016_2/Vivado/2016.2/data/ip/xpm/xpm_memory/hdl/xpm_memory_tdpram.sv" --include "../../../firmware_v2016.2.ip_user_files/ipstatic/JRFirmware/firmware_v2016.2/firmware_v2016.2.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_v5_3_1"
+verilog work  "../../../firmware_v2016.2.srcs/sources_1/ip/selectio_wiz_1/selectio_wiz_1_selectio_wiz.v" --include "../../../firmware_v2016.2.ip_user_files/ipstatic/JRFirmware/firmware_v2016.2/firmware_v2016.2.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_v5_3_1"
+verilog work  "../../../firmware_v2016.2.srcs/sources_1/ip/selectio_wiz_1/selectio_wiz_1.v" --include "../../../firmware_v2016.2.ip_user_files/ipstatic/JRFirmware/firmware_v2016.2/firmware_v2016.2.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_v5_3_1"
+verilog work  "../../../firmware_v2016.2.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0_clk_wiz.v" --include "../../../firmware_v2016.2.ip_user_files/ipstatic/JRFirmware/firmware_v2016.2/firmware_v2016.2.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_v5_3_1"
+verilog work  "../../../firmware_v2016.2.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.v" --include "../../../firmware_v2016.2.ip_user_files/ipstatic/JRFirmware/firmware_v2016.2/firmware_v2016.2.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_v5_3_1"
+verilog fifo_generator_v13_1_1  "../../../firmware_v2016.2.ip_user_files/ipstatic/fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v" --include "../../../firmware_v2016.2.ip_user_files/ipstatic/JRFirmware/firmware_v2016.2/firmware_v2016.2.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_v5_3_1"
+verilog fifo_generator_v13_1_1  "../../../firmware_v2016.2.ip_user_files/ipstatic/fifo_generator_v13_1_1/hdl/fifo_generator_v13_1_rfs.v" --include "../../../firmware_v2016.2.ip_user_files/ipstatic/JRFirmware/firmware_v2016.2/firmware_v2016.2.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_v5_3_1"
+verilog work  "../../../firmware_v2016.2.srcs/sources_1/ip/fifo_generator_0/sim/fifo_generator_0.v" --include "../../../firmware_v2016.2.ip_user_files/ipstatic/JRFirmware/firmware_v2016.2/firmware_v2016.2.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_v5_3_1"
+verilog work  "../../../firmware_v2016.2.srcs/sources_1/ip/ser_8/ser_8_selectio_wiz.v" --include "../../../firmware_v2016.2.ip_user_files/ipstatic/JRFirmware/firmware_v2016.2/firmware_v2016.2.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_v5_3_1"
+verilog work  "../../../firmware_v2016.2.srcs/sources_1/ip/ser_8/ser_8.v" --include "../../../firmware_v2016.2.ip_user_files/ipstatic/JRFirmware/firmware_v2016.2/firmware_v2016.2.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_v5_3_1"
+verilog work  "../../../firmware_v2016.2.srcs/sources_1/ip/fifo_md_v1/sim/fifo_md_v1.v" --include "../../../firmware_v2016.2.ip_user_files/ipstatic/JRFirmware/firmware_v2016.2/firmware_v2016.2.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_v5_3_1"
+verilog work  "../../../firmware_v2016.2.srcs/sources_1/ip/fifo_md_v2/sim/fifo_md_v2.v" --include "../../../firmware_v2016.2.ip_user_files/ipstatic/JRFirmware/firmware_v2016.2/firmware_v2016.2.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_v5_3_1"
+verilog work  "../../../firmware_v2016.2.srcs/sources_1/new/fifo_tx.v" --include "../../../firmware_v2016.2.ip_user_files/ipstatic/JRFirmware/firmware_v2016.2/firmware_v2016.2.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_v5_3_1"
+verilog work  "../../../firmware_v2016.2.srcs/sources_1/imports/Desktop/fifo_tx_v2.v" --include "../../../firmware_v2016.2.ip_user_files/ipstatic/JRFirmware/firmware_v2016.2/firmware_v2016.2.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_v5_3_1"
+verilog work  "../../../firmware_v2016.2.srcs/sources_1/new/slave_vfat3_md.v" --include "../../../firmware_v2016.2.ip_user_files/ipstatic/JRFirmware/firmware_v2016.2/firmware_v2016.2.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_v5_3_1"
+
+# compile glbl module
+verilog work "glbl.v"
+
+# Do not sort compile order
+nosort
