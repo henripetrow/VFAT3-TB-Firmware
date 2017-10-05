@@ -7,9 +7,9 @@
 # 
 
 if [ -z "$PATH" ]; then
-  PATH=/home/Xilinx/Vivado/2016.4/ids_lite/ISE/bin/lin64:/home/Xilinx/Vivado/2016.4/bin
+  PATH=/home/Xilinx/SDK/2016.4/bin:/home/Xilinx/Vivado/2016.4/ids_lite/ISE/bin/lin64:/home/Xilinx/Vivado/2016.4/bin
 else
-  PATH=/home/Xilinx/Vivado/2016.4/ids_lite/ISE/bin/lin64:/home/Xilinx/Vivado/2016.4/bin:$PATH
+  PATH=/home/Xilinx/SDK/2016.4/bin:/home/Xilinx/Vivado/2016.4/ids_lite/ISE/bin/lin64:/home/Xilinx/Vivado/2016.4/bin:$PATH
 fi
 export PATH
 
@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/a0312687/VFAT3-Testbench/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.runs/ila_0_synth_1'
+HD_PWD='/home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.runs/ila_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

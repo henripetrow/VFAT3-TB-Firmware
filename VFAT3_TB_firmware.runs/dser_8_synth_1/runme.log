@@ -9,33 +9,33 @@
     ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 
 source dser_8.tcl -notrace
-Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1220.340 ; gain = 205.121 ; free physical = 780 ; free virtual = 9337
-INFO: [Synth 8-638] synthesizing module 'dser_8' [/home/a0312687/VFAT3-Testbench/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.srcs/sources_1/ip/dser_8/dser_8.v:58]
-INFO: [Synth 8-638] synthesizing module 'dser_8_selectio_wiz' [/home/a0312687/VFAT3-Testbench/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.srcs/sources_1/ip/dser_8/dser_8_selectio_wiz.v:56]
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1240.559 ; gain = 220.031 ; free physical = 804 ; free virtual = 9520
+INFO: [Synth 8-638] synthesizing module 'dser_8' [/home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.srcs/sources_1/ip/dser_8/dser_8.v:58]
+INFO: [Synth 8-638] synthesizing module 'dser_8_selectio_wiz' [/home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.srcs/sources_1/ip/dser_8/dser_8_selectio_wiz.v:56]
 INFO: [Synth 8-638] synthesizing module 'IBUF' [/home/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:14146]
 INFO: [Synth 8-256] done synthesizing module 'IBUF' (1#1) [/home/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:14146]
 INFO: [Synth 8-638] synthesizing module 'ISERDESE2' [/home/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:19685]
 INFO: [Synth 8-256] done synthesizing module 'ISERDESE2' (2#1) [/home/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:19685]
-INFO: [Synth 8-256] done synthesizing module 'dser_8_selectio_wiz' (3#1) [/home/a0312687/VFAT3-Testbench/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.srcs/sources_1/ip/dser_8/dser_8_selectio_wiz.v:56]
-INFO: [Synth 8-256] done synthesizing module 'dser_8' (4#1) [/home/a0312687/VFAT3-Testbench/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.srcs/sources_1/ip/dser_8/dser_8.v:58]
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1260.816 ; gain = 245.598 ; free physical = 739 ; free virtual = 9295
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1260.816 ; gain = 245.598 ; free physical = 739 ; free virtual = 9295
+INFO: [Synth 8-256] done synthesizing module 'dser_8_selectio_wiz' (3#1) [/home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.srcs/sources_1/ip/dser_8/dser_8_selectio_wiz.v:56]
+INFO: [Synth 8-256] done synthesizing module 'dser_8' (4#1) [/home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.srcs/sources_1/ip/dser_8/dser_8.v:58]
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1281.035 ; gain = 260.508 ; free physical = 762 ; free virtual = 9478
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1281.035 ; gain = 260.508 ; free physical = 762 ; free virtual = 9478
 INFO: [Device 21-403] Loading part xc7k325tffg900-2
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1529.859 ; gain = 0.004 ; free physical = 494 ; free virtual = 9050
-Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1529.859 ; gain = 514.641 ; free physical = 502 ; free virtual = 9059
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1529.859 ; gain = 514.641 ; free physical = 502 ; free virtual = 9059
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1529.859 ; gain = 514.641 ; free physical = 502 ; free virtual = 9059
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1529.859 ; gain = 514.641 ; free physical = 495 ; free virtual = 9051
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1529.859 ; gain = 514.641 ; free physical = 478 ; free virtual = 9035
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1551.863 ; gain = 536.645 ; free physical = 449 ; free virtual = 9007
-Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1551.863 ; gain = 536.645 ; free physical = 449 ; free virtual = 9007
-Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1561.875 ; gain = 546.656 ; free physical = 441 ; free virtual = 8999
-Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1561.879 ; gain = 546.660 ; free physical = 431 ; free virtual = 8989
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1561.879 ; gain = 546.660 ; free physical = 431 ; free virtual = 8989
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1561.879 ; gain = 546.660 ; free physical = 431 ; free virtual = 8989
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1561.879 ; gain = 546.660 ; free physical = 431 ; free virtual = 8989
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1561.879 ; gain = 546.660 ; free physical = 431 ; free virtual = 8989
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1561.879 ; gain = 546.660 ; free physical = 431 ; free virtual = 8989
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1542.133 ; gain = 0.004 ; free physical = 547 ; free virtual = 9263
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1542.133 ; gain = 521.605 ; free physical = 547 ; free virtual = 9263
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1542.133 ; gain = 521.605 ; free physical = 547 ; free virtual = 9263
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1542.133 ; gain = 521.605 ; free physical = 547 ; free virtual = 9263
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1542.133 ; gain = 521.605 ; free physical = 539 ; free virtual = 9255
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1550.137 ; gain = 529.609 ; free physical = 523 ; free virtual = 9239
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1574.137 ; gain = 553.609 ; free physical = 463 ; free virtual = 9179
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1574.137 ; gain = 553.609 ; free physical = 463 ; free virtual = 9179
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1583.152 ; gain = 562.625 ; free physical = 455 ; free virtual = 9170
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1583.156 ; gain = 562.629 ; free physical = 455 ; free virtual = 9170
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1583.156 ; gain = 562.629 ; free physical = 455 ; free virtual = 9170
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1583.156 ; gain = 562.629 ; free physical = 455 ; free virtual = 9170
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1583.156 ; gain = 562.629 ; free physical = 455 ; free virtual = 9170
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1583.156 ; gain = 562.629 ; free physical = 455 ; free virtual = 9170
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1583.156 ; gain = 562.629 ; free physical = 455 ; free virtual = 9170
 
 Report Cell Usage: 
 +------+----------+------+
@@ -45,5 +45,5 @@ Report Cell Usage:
 |2     |LUT1      |     1|
 |3     |IBUF      |     1|
 +------+----------+------+
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1561.879 ; gain = 546.660 ; free physical = 431 ; free virtual = 8989
-synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1969.238 ; gain = 863.516 ; free physical = 143 ; free virtual = 8634
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1583.156 ; gain = 562.629 ; free physical = 455 ; free virtual = 9170
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1979.512 ; gain = 870.480 ; free physical = 134 ; free virtual = 8803

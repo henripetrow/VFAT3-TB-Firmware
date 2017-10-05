@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:/home/a0312687/Vivado/VFAT3-Testbench_hybrid+I2C/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.srcs/constrs_1/new/kc705_VBv1.xdc rfile:../../../vfat3_testing_firmware.srcs/constrs_1/new/kc705_VBv1.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.srcs/constrs_1/new/kc705_VBv1.xdc rfile:../../../VFAT3_TB_firmware.srcs/constrs_1/new/kc705_VBv1.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:12 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN AD12 [get_ports sysclk_p]
 set_property src_info {type:XDC file:1 line:13 export:INPUT save:INPUT read:READ} [current_design]

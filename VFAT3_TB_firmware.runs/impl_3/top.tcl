@@ -42,11 +42,9 @@ proc step_failed { step } {
   close $ch
 }
 
+set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
-set_msg_config  -ruleid {2}  -id {Project 1-200}  -new_severity {CRITICAL WARNING} 
 
 start_step init_design
 set ACTIVE_STEP init_design
@@ -57,63 +55,63 @@ set rc [catch {
   set_property board_part xilinx.com:kc705:part0:1.3 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir /home/a0312687/Vivado/VFAT3-Testbench_hybrid+I2C/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.cache/wt [current_project]
-  set_property parent.project_path /home/a0312687/Vivado/VFAT3-Testbench_hybrid+I2C/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.xpr [current_project]
-  set_property ip_output_repo /home/a0312687/Vivado/VFAT3-Testbench_hybrid+I2C/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.cache/ip [current_project]
+  set_property webtalk.parent_dir /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.cache/wt [current_project]
+  set_property parent.project_path /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.xpr [current_project]
+  set_property ip_output_repo /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
-  add_files -quiet /home/a0312687/Vivado/VFAT3-Testbench_hybrid+I2C/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.runs/synth_1/top.dcp
-  read_edif /home/a0312687/Vivado/VFAT3-Testbench_hybrid+I2C/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.srcs/sources_1/imports/firmware/ipcore_dir/mac_fifo_axi4.ngc
-  read_edif /home/a0312687/Vivado/VFAT3-Testbench_hybrid+I2C/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.srcs/sources_1/imports/firmware/ipcore_dir/tri_mode_eth_mac_v5_4.ngc
-  add_files -quiet /home/a0312687/Vivado/VFAT3-Testbench_hybrid+I2C/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.dcp
-  set_property netlist_only true [get_files /home/a0312687/Vivado/VFAT3-Testbench_hybrid+I2C/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.dcp]
-  add_files -quiet /home/a0312687/Vivado/VFAT3-Testbench_hybrid+I2C/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.dcp
-  set_property netlist_only true [get_files /home/a0312687/Vivado/VFAT3-Testbench_hybrid+I2C/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.dcp]
-  add_files -quiet /home/a0312687/Vivado/VFAT3-Testbench_hybrid+I2C/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.srcs/sources_1/ip/fifo_rx/fifo_rx.dcp
-  set_property netlist_only true [get_files /home/a0312687/Vivado/VFAT3-Testbench_hybrid+I2C/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.srcs/sources_1/ip/fifo_rx/fifo_rx.dcp]
-  add_files -quiet /home/a0312687/Vivado/VFAT3-Testbench_hybrid+I2C/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.srcs/sources_1/ip/ila_0/ila_0.dcp
-  set_property netlist_only true [get_files /home/a0312687/Vivado/VFAT3-Testbench_hybrid+I2C/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.srcs/sources_1/ip/ila_0/ila_0.dcp]
-  add_files -quiet /home/a0312687/Vivado/VFAT3-Testbench_hybrid+I2C/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.srcs/sources_1/ip/ser_8/ser_8.dcp
-  set_property netlist_only true [get_files /home/a0312687/Vivado/VFAT3-Testbench_hybrid+I2C/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.srcs/sources_1/ip/ser_8/ser_8.dcp]
-  add_files -quiet /home/a0312687/Vivado/VFAT3-Testbench_hybrid+I2C/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.srcs/sources_1/ip/dser_8/dser_8.dcp
-  set_property netlist_only true [get_files /home/a0312687/Vivado/VFAT3-Testbench_hybrid+I2C/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.srcs/sources_1/ip/dser_8/dser_8.dcp]
-  add_files -quiet /home/a0312687/Vivado/VFAT3-Testbench_hybrid+I2C/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.srcs/sources_1/ip/ila_5/ila_5.dcp
-  set_property netlist_only true [get_files /home/a0312687/Vivado/VFAT3-Testbench_hybrid+I2C/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.srcs/sources_1/ip/ila_5/ila_5.dcp]
-  read_xdc -mode out_of_context -ref clk_wiz_0 -cells inst /home/a0312687/Vivado/VFAT3-Testbench_hybrid+I2C/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0_ooc.xdc
-  set_property processing_order EARLY [get_files /home/a0312687/Vivado/VFAT3-Testbench_hybrid+I2C/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0_ooc.xdc]
-  read_xdc -prop_thru_buffers -ref clk_wiz_0 -cells inst /home/a0312687/Vivado/VFAT3-Testbench_hybrid+I2C/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0_board.xdc
-  set_property processing_order EARLY [get_files /home/a0312687/Vivado/VFAT3-Testbench_hybrid+I2C/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0_board.xdc]
-  read_xdc -ref clk_wiz_0 -cells inst /home/a0312687/Vivado/VFAT3-Testbench_hybrid+I2C/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xdc
-  set_property processing_order EARLY [get_files /home/a0312687/Vivado/VFAT3-Testbench_hybrid+I2C/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xdc]
-  read_xdc -mode out_of_context -ref fifo_generator_0 -cells U0 /home/a0312687/Vivado/VFAT3-Testbench_hybrid+I2C/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_ooc.xdc
-  set_property processing_order EARLY [get_files /home/a0312687/Vivado/VFAT3-Testbench_hybrid+I2C/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_ooc.xdc]
-  read_xdc -ref fifo_generator_0 -cells U0 /home/a0312687/Vivado/VFAT3-Testbench_hybrid+I2C/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0.xdc
-  set_property processing_order EARLY [get_files /home/a0312687/Vivado/VFAT3-Testbench_hybrid+I2C/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0.xdc]
-  read_xdc -mode out_of_context -ref fifo_rx -cells U0 /home/a0312687/Vivado/VFAT3-Testbench_hybrid+I2C/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.srcs/sources_1/ip/fifo_rx/fifo_rx_ooc.xdc
-  set_property processing_order EARLY [get_files /home/a0312687/Vivado/VFAT3-Testbench_hybrid+I2C/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.srcs/sources_1/ip/fifo_rx/fifo_rx_ooc.xdc]
-  read_xdc -ref fifo_rx -cells U0 /home/a0312687/Vivado/VFAT3-Testbench_hybrid+I2C/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.srcs/sources_1/ip/fifo_rx/fifo_rx/fifo_rx.xdc
-  set_property processing_order EARLY [get_files /home/a0312687/Vivado/VFAT3-Testbench_hybrid+I2C/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.srcs/sources_1/ip/fifo_rx/fifo_rx/fifo_rx.xdc]
-  read_xdc -mode out_of_context -ref ila_0 -cells U0 /home/a0312687/Vivado/VFAT3-Testbench_hybrid+I2C/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.srcs/sources_1/ip/ila_0/ila_0_ooc.xdc
-  set_property processing_order EARLY [get_files /home/a0312687/Vivado/VFAT3-Testbench_hybrid+I2C/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.srcs/sources_1/ip/ila_0/ila_0_ooc.xdc]
-  read_xdc -ref ila_0 -cells U0 /home/a0312687/Vivado/VFAT3-Testbench_hybrid+I2C/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc
-  set_property processing_order EARLY [get_files /home/a0312687/Vivado/VFAT3-Testbench_hybrid+I2C/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc]
-  read_xdc -mode out_of_context -ref ser_8 -cells inst /home/a0312687/Vivado/VFAT3-Testbench_hybrid+I2C/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.srcs/sources_1/ip/ser_8/ser_8_ooc.xdc
-  set_property processing_order EARLY [get_files /home/a0312687/Vivado/VFAT3-Testbench_hybrid+I2C/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.srcs/sources_1/ip/ser_8/ser_8_ooc.xdc]
-  read_xdc -ref ser_8 -cells inst /home/a0312687/Vivado/VFAT3-Testbench_hybrid+I2C/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.srcs/sources_1/ip/ser_8/ser_8.xdc
-  set_property processing_order EARLY [get_files /home/a0312687/Vivado/VFAT3-Testbench_hybrid+I2C/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.srcs/sources_1/ip/ser_8/ser_8.xdc]
-  read_xdc -mode out_of_context -ref dser_8 -cells inst /home/a0312687/Vivado/VFAT3-Testbench_hybrid+I2C/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.srcs/sources_1/ip/dser_8/dser_8_ooc.xdc
-  set_property processing_order EARLY [get_files /home/a0312687/Vivado/VFAT3-Testbench_hybrid+I2C/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.srcs/sources_1/ip/dser_8/dser_8_ooc.xdc]
-  read_xdc -ref dser_8 -cells inst /home/a0312687/Vivado/VFAT3-Testbench_hybrid+I2C/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.srcs/sources_1/ip/dser_8/dser_8.xdc
-  set_property processing_order EARLY [get_files /home/a0312687/Vivado/VFAT3-Testbench_hybrid+I2C/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.srcs/sources_1/ip/dser_8/dser_8.xdc]
-  read_xdc -mode out_of_context -ref ila_5 -cells U0 /home/a0312687/Vivado/VFAT3-Testbench_hybrid+I2C/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.srcs/sources_1/ip/ila_5/ila_5_ooc.xdc
-  set_property processing_order EARLY [get_files /home/a0312687/Vivado/VFAT3-Testbench_hybrid+I2C/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.srcs/sources_1/ip/ila_5/ila_5_ooc.xdc]
-  read_xdc -ref ila_5 -cells U0 /home/a0312687/Vivado/VFAT3-Testbench_hybrid+I2C/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.srcs/sources_1/ip/ila_5/ila_v6_2/constraints/ila.xdc
-  set_property processing_order EARLY [get_files /home/a0312687/Vivado/VFAT3-Testbench_hybrid+I2C/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.srcs/sources_1/ip/ila_5/ila_v6_2/constraints/ila.xdc]
-  read_xdc /home/a0312687/Vivado/VFAT3-Testbench_hybrid+I2C/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.srcs/constrs_1/new/kc705_VBv1.xdc
-  read_xdc -ref fifo_generator_0 -cells U0 /home/a0312687/Vivado/VFAT3-Testbench_hybrid+I2C/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_clocks.xdc
-  set_property processing_order LATE [get_files /home/a0312687/Vivado/VFAT3-Testbench_hybrid+I2C/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_clocks.xdc]
-  read_xdc -ref fifo_rx -cells U0 /home/a0312687/Vivado/VFAT3-Testbench_hybrid+I2C/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.srcs/sources_1/ip/fifo_rx/fifo_rx/fifo_rx_clocks.xdc
-  set_property processing_order LATE [get_files /home/a0312687/Vivado/VFAT3-Testbench_hybrid+I2C/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.srcs/sources_1/ip/fifo_rx/fifo_rx/fifo_rx_clocks.xdc]
+  add_files -quiet /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.runs/synth_1/top.dcp
+  read_edif /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.srcs/sources_1/imports/firmware/ipcore_dir/mac_fifo_axi4.ngc
+  read_edif /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.srcs/sources_1/imports/firmware/ipcore_dir/tri_mode_eth_mac_v5_4.ngc
+  add_files -quiet /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.dcp
+  set_property netlist_only true [get_files /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.dcp]
+  add_files -quiet /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.dcp
+  set_property netlist_only true [get_files /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.dcp]
+  add_files -quiet /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.srcs/sources_1/ip/fifo_rx/fifo_rx.dcp
+  set_property netlist_only true [get_files /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.srcs/sources_1/ip/fifo_rx/fifo_rx.dcp]
+  add_files -quiet /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.srcs/sources_1/ip/ila_0/ila_0.dcp
+  set_property netlist_only true [get_files /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.srcs/sources_1/ip/ila_0/ila_0.dcp]
+  add_files -quiet /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.srcs/sources_1/ip/ser_8/ser_8.dcp
+  set_property netlist_only true [get_files /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.srcs/sources_1/ip/ser_8/ser_8.dcp]
+  add_files -quiet /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.srcs/sources_1/ip/dser_8/dser_8.dcp
+  set_property netlist_only true [get_files /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.srcs/sources_1/ip/dser_8/dser_8.dcp]
+  add_files -quiet /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.srcs/sources_1/ip/ila_5/ila_5.dcp
+  set_property netlist_only true [get_files /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.srcs/sources_1/ip/ila_5/ila_5.dcp]
+  read_xdc -mode out_of_context -ref clk_wiz_0 -cells inst /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0_ooc.xdc
+  set_property processing_order EARLY [get_files /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0_ooc.xdc]
+  read_xdc -prop_thru_buffers -ref clk_wiz_0 -cells inst /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0_board.xdc
+  set_property processing_order EARLY [get_files /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0_board.xdc]
+  read_xdc -ref clk_wiz_0 -cells inst /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xdc
+  set_property processing_order EARLY [get_files /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xdc]
+  read_xdc -mode out_of_context -ref fifo_generator_0 -cells U0 /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_ooc.xdc
+  set_property processing_order EARLY [get_files /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_ooc.xdc]
+  read_xdc -ref fifo_generator_0 -cells U0 /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0.xdc
+  set_property processing_order EARLY [get_files /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0.xdc]
+  read_xdc -mode out_of_context -ref fifo_rx -cells U0 /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.srcs/sources_1/ip/fifo_rx/fifo_rx_ooc.xdc
+  set_property processing_order EARLY [get_files /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.srcs/sources_1/ip/fifo_rx/fifo_rx_ooc.xdc]
+  read_xdc -ref fifo_rx -cells U0 /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.srcs/sources_1/ip/fifo_rx/fifo_rx/fifo_rx.xdc
+  set_property processing_order EARLY [get_files /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.srcs/sources_1/ip/fifo_rx/fifo_rx/fifo_rx.xdc]
+  read_xdc -mode out_of_context -ref ila_0 -cells U0 /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.srcs/sources_1/ip/ila_0/ila_0_ooc.xdc
+  set_property processing_order EARLY [get_files /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.srcs/sources_1/ip/ila_0/ila_0_ooc.xdc]
+  read_xdc -ref ila_0 -cells U0 /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc
+  set_property processing_order EARLY [get_files /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc]
+  read_xdc -mode out_of_context -ref ser_8 -cells inst /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.srcs/sources_1/ip/ser_8/ser_8_ooc.xdc
+  set_property processing_order EARLY [get_files /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.srcs/sources_1/ip/ser_8/ser_8_ooc.xdc]
+  read_xdc -ref ser_8 -cells inst /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.srcs/sources_1/ip/ser_8/ser_8.xdc
+  set_property processing_order EARLY [get_files /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.srcs/sources_1/ip/ser_8/ser_8.xdc]
+  read_xdc -mode out_of_context -ref dser_8 -cells inst /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.srcs/sources_1/ip/dser_8/dser_8_ooc.xdc
+  set_property processing_order EARLY [get_files /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.srcs/sources_1/ip/dser_8/dser_8_ooc.xdc]
+  read_xdc -ref dser_8 -cells inst /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.srcs/sources_1/ip/dser_8/dser_8.xdc
+  set_property processing_order EARLY [get_files /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.srcs/sources_1/ip/dser_8/dser_8.xdc]
+  read_xdc -mode out_of_context -ref ila_5 -cells U0 /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.srcs/sources_1/ip/ila_5/ila_5_ooc.xdc
+  set_property processing_order EARLY [get_files /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.srcs/sources_1/ip/ila_5/ila_5_ooc.xdc]
+  read_xdc -ref ila_5 -cells U0 /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.srcs/sources_1/ip/ila_5/ila_v6_2/constraints/ila.xdc
+  set_property processing_order EARLY [get_files /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.srcs/sources_1/ip/ila_5/ila_v6_2/constraints/ila.xdc]
+  read_xdc /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.srcs/constrs_1/new/kc705_VBv1.xdc
+  read_xdc -ref fifo_generator_0 -cells U0 /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_clocks.xdc
+  set_property processing_order LATE [get_files /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_clocks.xdc]
+  read_xdc -ref fifo_rx -cells U0 /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.srcs/sources_1/ip/fifo_rx/fifo_rx/fifo_rx_clocks.xdc
+  set_property processing_order LATE [get_files /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.srcs/sources_1/ip/fifo_rx/fifo_rx/fifo_rx_clocks.xdc]
   link_design -top top -part xc7k325tffg900-2
   write_hwdef -file top.hwdef
   close_msg_db -file init_design.pb

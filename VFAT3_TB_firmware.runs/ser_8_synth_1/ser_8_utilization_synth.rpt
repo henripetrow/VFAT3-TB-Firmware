@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
-| Date         : Tue May 30 13:20:21 2017
-| Host         : LUT4431 running 64-bit CentOS release 6.9 (Final)
+| Date         : Mon Oct  2 18:28:31 2017
+| Host         : lut4431 running 64-bit unknown
 | Command      : report_utilization -file ser_8_utilization_synth.rpt -pb ser_8_utilization_synth.pb
 | Design       : ser_8
 | Device       : 7k325tffg900-2

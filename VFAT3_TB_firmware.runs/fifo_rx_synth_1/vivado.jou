@@ -2,11 +2,11 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
 # IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
-# Start of session at: Tue May 30 13:17:21 2017
-# Process ID: 21081
-# Current directory: /home/a0312687/VFAT3-Testbench/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.runs/fifo_rx_synth_1
+# Start of session at: Mon Oct  2 18:25:40 2017
+# Process ID: 22935
+# Current directory: /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.runs/fifo_rx_synth_1
 # Command line: vivado -log fifo_rx.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fifo_rx.tcl
-# Log file: /home/a0312687/VFAT3-Testbench/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.runs/fifo_rx_synth_1/fifo_rx.vds
-# Journal file: /home/a0312687/VFAT3-Testbench/Firmware/vfat3_testing_firmware/vfat3_testing_firmware.runs/fifo_rx_synth_1/vivado.jou
+# Log file: /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.runs/fifo_rx_synth_1/fifo_rx.vds
+# Journal file: /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.runs/fifo_rx_synth_1/vivado.jou
 #-----------------------------------------------------------
 source fifo_rx.tcl -notrace

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="5800001fs"></ZoomEndTime>
+      <Cursor1Time time="6409000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="211"></NameColumnWidth>
+      <ValueColumnWidth column_width="63"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="15" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject type="logic" fp_name="slaves/slaveadc/ipbus_in[ipb_strobe]">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">slaves/slaveadc/ipbus_in[ipb_strobe]</obj_property>
+      <obj_property name="ObjectShortName">ipbus_in[ipb_strobe]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="slaves/slaveadc/ipbus_in[ipb_write]_1">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">slaves/slaveadc/ipbus_in[ipb_write]_1</obj_property>
+      <obj_property name="ObjectShortName">ipbus_in[ipb_write]_1</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="slaves/slaveadc/clock">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">slaves/slaveadc/clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="slaves/slaveadc/reset">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">slaves/slaveadc/reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="slaves/slaveadc/enable">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">slaves/slaveadc/enable</obj_property>
+      <obj_property name="ObjectShortName">enable</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="slaves/slaveadc/rdata">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">slaves/slaveadc/rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rdata[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="slaves/slaveadc/ipbus_in[ipb_write]">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">slaves/slaveadc/ipbus_in[ipb_write]</obj_property>
+      <obj_property name="ObjectShortName">ipbus_in[ipb_write]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="slaves/slaveadc/r_w">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">slaves/slaveadc/r_w</obj_property>
+      <obj_property name="ObjectShortName">r_w</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="slaves/slaveadc/scl_i">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">slaves/slaveadc/scl_i</obj_property>
+      <obj_property name="ObjectShortName">scl_i</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="slaves/slaveadc/sda_oi">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">slaves/slaveadc/sda_oi</obj_property>
+      <obj_property name="ObjectShortName">sda_oi</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="slaves/slaveadc/ipbus_in[ipb_addr]_1">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">slaves/slaveadc/ipbus_in[ipb_addr]_1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ipbus_in[ipb_addr]_1[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="slaves/slaveadc/ipbus_in[ipb_addr]">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">slaves/slaveadc/ipbus_in[ipb_addr][31:0]</obj_property>
+      <obj_property name="ObjectShortName">ipbus_in[ipb_addr][31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="slaves/slaveadc/data_valid">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">slaves/slaveadc/data_valid</obj_property>
+      <obj_property name="ObjectShortName">data_valid</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="slaves/slaveadc/error">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">slaves/slaveadc/error</obj_property>
+      <obj_property name="ObjectShortName">error</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="slaves/slaveadc/rdata">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">slaves/slaveadc/rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rdata[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+</wave_config>

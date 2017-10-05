@@ -333,13 +333,14 @@ begin
 			dv 		=> d_out_valid
 		);
     
-    input_resync <= vfat_rst_wr_en or sw_button;
+    --input_resync <= vfat_rst_wr_en or sw_button;
 		
 	dsersync: dser_sync
 		port map(
 			clk40 	=> clk40,
 			rst 	=> rst40,
-			re_sync => sw_button, -- south gpio button to resync
+--			re_sync => sw_button, -- south gpio button to resync
+            re_sync => vfat_rst_wr_en,
 			d_in 	=> reverse_vector(data_bus_in),
 			bslip 	=> bitslip,
 			in_sync => d_sync,

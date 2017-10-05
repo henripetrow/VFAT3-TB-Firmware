@@ -17,7 +17,7 @@ WARNING:NetListWriters:306 - Signal bus TXGEN/TX_SM1/PREAMBLE_PIPE[13 : 0] on
    signals.
   finished :Prep
 Writing EDIF netlist file tri_mode_eth_mac_v5_4.edif ...
-ngc2edif: Total memory usage is 108260 kilobytes
+ngc2edif: Total memory usage is 108932 kilobytes
 
 Release 14.7 - ngc2edif P_INT.20161201 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
@@ -29,5 +29,5 @@ Processing design ...
    Preping design's macros ...
   finished :Prep
 Writing EDIF netlist file mac_fifo_axi4.edif ...
-ngc2edif: Total memory usage is 103360 kilobytes
+ngc2edif: Total memory usage is 104040 kilobytes
 

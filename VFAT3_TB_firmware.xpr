@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="17" Path="/home/a0312687/VFAT3-TB-Firmware/VFAT3_TB_firmware.xpr">
+<Project Version="7" Minor="17" Path="/home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="74bb39cfa7164449aea80fea3652c4c1"/>
@@ -22,6 +22,7 @@
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="work"/>
     <Option Name="CxlOverwriteLibs" Val="1"/>
+    <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPCachePermission" Val="read"/>
     <Option Name="IPCachePermission" Val="write"/>
     <Option Name="EnableCoreContainer" Val="FALSE"/>

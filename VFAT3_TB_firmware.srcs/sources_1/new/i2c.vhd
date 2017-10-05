@@ -201,7 +201,7 @@ begin
                             address_cnt <= 6;
                             state <= ADDR;
                         end if;                       
-                    -- Transmit the address signal
+                    -- Transmit the chip address signal
                     when ADDR => 
                         -- Write data on a low clock
                         if (low_clk = '1') then
@@ -245,7 +245,7 @@ begin
                             if (sda_i = '0') then
 
                                 -- Go to read or write states
-                                case rw_n is
+                                case rw_n is -- 1 for read, 0 for write
                                     when '1' => 
                                         data_cnt <= 15;
                                         state <= RD;
@@ -258,7 +258,7 @@ begin
                                 state <= ERROR;
                             end if;
                         end if;
-                    -- Read the data line
+                    -- Read the first bits 15:8 from data line
                     when RD => 
                         -- On high clock, read data
                         if (high_clk = '1') then
@@ -276,7 +276,7 @@ begin
                         end if;
                     -- Send the read ackownledgment 
                     when ACK_1 => 
-                        -- On the falling clock, take back control
+                       -- On the falling clock, take back control
                         if (falling_clk = '1') then
                             -- Master controls the line
                             sda_o <= '0';
@@ -288,9 +288,9 @@ begin
                     when RST_1 => 
                         -- Wait for a low clock
                         if (low_clk = '1') then
-                            -- Master controls the line
-                            sda_o <= '0';
-                            sda_tri_o <= '0';
+                            -- Slave controls the line (used to be master so lines were pulled low.)
+                            sda_o <= '1';
+                            sda_tri_o <= '1';
                             data_cnt <= 7;
                             state <= RD2;
                         end if;                        
@@ -303,8 +303,8 @@ begin
                         if (high_clk = '1') then
                             -- Slave controls the line
                             dout(data_cnt) <= sda_i;
-                            sda_o <= '1';
-                            sda_tri_o <= '1';
+                            --sda_o <= '1';
+                            --sda_tri_o <= '1';
                             -- If all the data has been read, send acknowledgment
                             if (data_cnt = 0) then
                                 state <= ACK_R1;
@@ -421,7 +421,7 @@ begin
                                 if (sda_i = '0') then
                                     data_cnt <= 7;
                                     wstart <= '0';
-                                    din <= (others => '0');
+                                    din <= (0 => '1', others => '0'); -- LSB for configuration register.
                                     state <= WR;
     
                                 -- or error

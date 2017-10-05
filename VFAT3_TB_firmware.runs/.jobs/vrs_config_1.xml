@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="clk_wiz_0_synth_1" LaunchDir="/home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.runs/clk_wiz_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fifo_generator_0_synth_1" LaunchDir="/home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.runs/fifo_generator_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fifo_rx_synth_1" LaunchDir="/home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.runs/fifo_rx_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ila_0_synth_1" LaunchDir="/home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.runs/ila_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ser_8_synth_1" LaunchDir="/home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.runs/ser_8_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="dser_8_synth_1" LaunchDir="/home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.runs/dser_8_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ila_5_synth_1" LaunchDir="/home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.runs/ila_5_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="/home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="clk_wiz_0_synth_1"/>
+		<Parent Id="fifo_generator_0_synth_1"/>
+		<Parent Id="fifo_rx_synth_1"/>
+		<Parent Id="ila_0_synth_1"/>
+		<Parent Id="ser_8_synth_1"/>
+		<Parent Id="dser_8_synth_1"/>
+		<Parent Id="ila_5_synth_1"/>
+	</Run>
+	<Run Id="impl_3" LaunchDir="/home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.runs/impl_3" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="clk_wiz_0_synth_1"/>
+		<Parent Id="fifo_generator_0_synth_1"/>
+		<Parent Id="fifo_rx_synth_1"/>
+		<Parent Id="ila_0_synth_1"/>
+		<Parent Id="ser_8_synth_1"/>
+		<Parent Id="dser_8_synth_1"/>
+		<Parent Id="ila_5_synth_1"/>
+	</Run>
+</Runs>
+

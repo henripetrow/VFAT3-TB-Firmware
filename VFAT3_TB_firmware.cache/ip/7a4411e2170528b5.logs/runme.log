@@ -1,0 +1,68 @@
+
+*** Running vivado
+    with args -log ila_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ila_0.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source ila_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1293.562 ; gain = 273.035 ; free physical = 669 ; free virtual = 9455
+INFO: [Synth 8-638] synthesizing module 'ila_0' [/home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.srcs/sources_1/ip/ila_0/synth/ila_0.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'CFGLUT5' [/home/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:998]
+INFO: [Synth 8-256] done synthesizing module 'CFGLUT5' (8#1) [/home/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:998]
+INFO: [Synth 8-638] synthesizing module 'CARRY4' [/home/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:961]
+INFO: [Synth 8-256] done synthesizing module 'CARRY4' (9#1) [/home/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:961]
+INFO: [Synth 8-638] synthesizing module 'SRLC32E' [/home/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:43478]
+INFO: [Synth 8-256] done synthesizing module 'SRLC32E' (19#1) [/home/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:43478]
+INFO: [Synth 8-638] synthesizing module 'SRL16E' [/home/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:43328]
+INFO: [Synth 8-256] done synthesizing module 'SRL16E' (21#1) [/home/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:43328]
+INFO: [Synth 8-638] synthesizing module 'SRLC16E' [/home/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:43417]
+INFO: [Synth 8-256] done synthesizing module 'SRLC16E' (23#1) [/home/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:43417]
+INFO: [Synth 8-638] synthesizing module 'FDRE' [/home/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-256] done synthesizing module 'FDRE' (28#1) [/home/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-256] done synthesizing module 'ila_0' (46#1) [/home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.srcs/sources_1/ip/ila_0/synth/ila_0.vhd:89]
+Finished RTL Elaboration : Time (s): cpu = 00:01:07 ; elapsed = 00:01:07 . Memory (MB): peak = 1631.543 ; gain = 611.016 ; free physical = 1048 ; free virtual = 9763
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:07 ; elapsed = 00:01:08 . Memory (MB): peak = 1631.543 ; gain = 611.016 ; free physical = 1047 ; free virtual = 9762
+INFO: [Device 21-403] Loading part xc7k325tffg900-2
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.11 . Memory (MB): peak = 1736.555 ; gain = 0.004 ; free physical = 804 ; free virtual = 9520
+Finished Constraint Validation : Time (s): cpu = 00:01:23 ; elapsed = 00:01:23 . Memory (MB): peak = 1736.555 ; gain = 716.027 ; free physical = 657 ; free virtual = 9373
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:23 ; elapsed = 00:01:23 . Memory (MB): peak = 1736.555 ; gain = 716.027 ; free physical = 657 ; free virtual = 9373
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:24 ; elapsed = 00:01:24 . Memory (MB): peak = 1736.555 ; gain = 716.027 ; free physical = 640 ; free virtual = 9356
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:27 ; elapsed = 00:01:27 . Memory (MB): peak = 1736.555 ; gain = 716.027 ; free physical = 551 ; free virtual = 9266
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:36 ; elapsed = 00:01:37 . Memory (MB): peak = 1736.559 ; gain = 716.031 ; free physical = 489 ; free virtual = 9205
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:45 ; elapsed = 00:01:46 . Memory (MB): peak = 1736.559 ; gain = 716.031 ; free physical = 1047 ; free virtual = 9716
+Finished Timing Optimization : Time (s): cpu = 00:01:46 ; elapsed = 00:01:47 . Memory (MB): peak = 1736.559 ; gain = 716.031 ; free physical = 1045 ; free virtual = 9714
+Finished Technology Mapping : Time (s): cpu = 00:01:48 ; elapsed = 00:01:49 . Memory (MB): peak = 1736.559 ; gain = 716.031 ; free physical = 894 ; free virtual = 9562
+Finished IO Insertion : Time (s): cpu = 00:01:48 ; elapsed = 00:01:50 . Memory (MB): peak = 1736.559 ; gain = 716.031 ; free physical = 893 ; free virtual = 9562
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:48 ; elapsed = 00:01:50 . Memory (MB): peak = 1736.559 ; gain = 716.031 ; free physical = 893 ; free virtual = 9562
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:49 ; elapsed = 00:01:50 . Memory (MB): peak = 1736.559 ; gain = 716.031 ; free physical = 893 ; free virtual = 9562
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:49 ; elapsed = 00:01:50 . Memory (MB): peak = 1736.559 ; gain = 716.031 ; free physical = 893 ; free virtual = 9562
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:49 ; elapsed = 00:01:50 . Memory (MB): peak = 1736.559 ; gain = 716.031 ; free physical = 893 ; free virtual = 9562
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:49 ; elapsed = 00:01:50 . Memory (MB): peak = 1736.559 ; gain = 716.031 ; free physical = 893 ; free virtual = 9562
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |    82|
+|2     |CFGLUT5  |   232|
+|3     |LUT1     |    38|
+|4     |LUT2     |    58|
+|5     |LUT3     |   118|
+|6     |LUT4     |   330|
+|7     |LUT5     |   161|
+|8     |LUT6     |   929|
+|9     |MUXF7    |    61|
+|10    |MUXF8    |     1|
+|11    |RAMB36E1 |     5|
+|12    |SRL16E   |   184|
+|13    |SRLC16E  |     2|
+|14    |SRLC32E  |    17|
+|15    |FDRE     |  2752|
+|16    |FDSE     |     9|
++------+---------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:49 ; elapsed = 00:01:50 . Memory (MB): peak = 1736.559 ; gain = 716.031 ; free physical = 893 ; free virtual = 9562
+synth_design: Time (s): cpu = 00:01:48 ; elapsed = 00:01:49 . Memory (MB): peak = 1736.559 ; gain = 590.531 ; free physical = 804 ; free virtual = 9472

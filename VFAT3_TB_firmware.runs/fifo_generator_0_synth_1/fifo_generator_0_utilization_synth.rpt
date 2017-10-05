@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
-| Date         : Tue May 30 13:18:57 2017
-| Host         : LUT4431 running 64-bit CentOS release 6.9 (Final)
+| Date         : Mon Oct  2 18:27:18 2017
+| Host         : lut4431 running 64-bit unknown
 | Command      : report_utilization -file fifo_generator_0_utilization_synth.rpt -pb fifo_generator_0_utilization_synth.pb
 | Design       : fifo_generator_0
 | Device       : 7k325tffg900-2

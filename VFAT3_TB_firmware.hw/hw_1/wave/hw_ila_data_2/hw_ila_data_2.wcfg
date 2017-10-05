@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="5801fs"></ZoomEndTime>
+      <Cursor1Time time="0fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="211"></NameColumnWidth>
+      <ValueColumnWidth column_width="63"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="28" />
+   <wvobject type="logic" fp_name="slaves/slavevfat3/fifo_out_w_en">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">slaves/slavevfat3/fifo_out_w_en</obj_property>
+      <obj_property name="ObjectShortName">fifo_out_w_en</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="slaves/slavevfat3/fifo_in_w_en">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">slaves/slavevfat3/fifo_in_w_en</obj_property>
+      <obj_property name="ObjectShortName">fifo_in_w_en</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="slaves/slavevfat3/fifo_out_r_en">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">slaves/slavevfat3/fifo_out_r_en</obj_property>
+      <obj_property name="ObjectShortName">fifo_out_r_en</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="slaves/slavevfat3/fifo_in_r_en">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">slaves/slavevfat3/fifo_in_r_en</obj_property>
+      <obj_property name="ObjectShortName">fifo_in_r_en</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="slaves/slavevfat3/fifo_out_valid">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">slaves/slavevfat3/fifo_out_valid</obj_property>
+      <obj_property name="ObjectShortName">fifo_out_valid</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="slaves/slavevfat3/fifo_in_valid">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">slaves/slavevfat3/fifo_in_valid</obj_property>
+      <obj_property name="ObjectShortName">fifo_in_valid</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="slaves/slavevfat3/fifo_out_data_in">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">slaves/slavevfat3/fifo_out_data_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo_out_data_in[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="slaves/slavevfat3/fifo_out_data_out">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">slaves/slavevfat3/fifo_out_data_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo_out_data_out[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="slaves/slavevfat3/fifo_in_data_in">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">slaves/slavevfat3/fifo_in_data_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo_in_data_in[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="slaves/slavevfat3/fifo_in_data_out">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">slaves/slavevfat3/fifo_in_data_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo_in_data_out[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="slaves/slavevfat3/fifo_out_empty">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">slaves/slavevfat3/fifo_out_empty</obj_property>
+      <obj_property name="ObjectShortName">fifo_out_empty</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="slaves/slavevfat3/fifo_in_empty">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">slaves/slavevfat3/fifo_in_empty</obj_property>
+      <obj_property name="ObjectShortName">fifo_in_empty</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="slaves/slavevfat3/fifo_out_full">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">slaves/slavevfat3/fifo_out_full</obj_property>
+      <obj_property name="ObjectShortName">fifo_out_full</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="slaves/slavevfat3/fifo_in_full">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">slaves/slavevfat3/fifo_in_full</obj_property>
+      <obj_property name="ObjectShortName">fifo_in_full</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="slaves/slavevfat3/ser_d_in">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">slaves/slavevfat3/ser_d_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ser_d_in[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="slaves/slavevfat3/reset">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">slaves/slavevfat3/reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="slaves/slavevfat3/rst40">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">slaves/slavevfat3/rst40</obj_property>
+      <obj_property name="ObjectShortName">rst40</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="slaves/slavevfat3/reset_fifo">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">slaves/slavevfat3/reset_fifo</obj_property>
+      <obj_property name="ObjectShortName">reset_fifo</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="slaves/slavevfat3/data_bus_in">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">slaves/slavevfat3/data_bus_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_bus_in[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="slaves/slavevfat3/d_sync">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">slaves/slavevfat3/d_sync[7:0]</obj_property>
+      <obj_property name="ObjectShortName">d_sync[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="slaves/slavevfat3/sync_flag">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">slaves/slavevfat3/sync_flag</obj_property>
+      <obj_property name="ObjectShortName">sync_flag</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="slaves/slavevfat3/bitslip">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">slaves/slavevfat3/bitslip</obj_property>
+      <obj_property name="ObjectShortName">bitslip</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="slaves/slavevfat3/rx">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">slaves/slavevfat3/rx</obj_property>
+      <obj_property name="ObjectShortName">rx</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="slaves/slavevfat3/sw_button">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">slaves/slavevfat3/sw_button</obj_property>
+      <obj_property name="ObjectShortName">sw_button</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="slaves/slavevfat3/ack_to_sw">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">slaves/slavevfat3/ack_to_sw</obj_property>
+      <obj_property name="ObjectShortName">ack_to_sw</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="slaves/slavevfat3/fw_st_rd">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">slaves/slavevfat3/fw_st_rd[3:0]</obj_property>
+      <obj_property name="ObjectShortName">fw_st_rd[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="slaves/slavevfat3/fw_st_wr">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">slaves/slavevfat3/fw_st_wr[3:0]</obj_property>
+      <obj_property name="ObjectShortName">fw_st_wr[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="slaves/slavevfat3/fw_st_wr_en">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">slaves/slavevfat3/fw_st_wr_en</obj_property>
+      <obj_property name="ObjectShortName">fw_st_wr_en</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+</wave_config>

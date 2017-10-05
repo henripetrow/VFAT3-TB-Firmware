@@ -25,7 +25,7 @@ package body ipbus_addr_decode is
   begin
 
 		
-		if std_match(addr, "-----------------011--------000-") then
+		if std_match(addr, "-----------------011--------00--") then
 			sel := 0; -- vfat3 / base 0x00003000 / mask 0x0000300e
 		elsif std_match(addr, "-----------------100--------000-") then
 			sel := 1; -- adc / base 0x00004000 / mask 0x0000300e

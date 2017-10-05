@@ -61,6 +61,7 @@ architecture Behavioral of slave_adc is
 	component control_adc is
         port(
             clk         : in std_logic;
+            clk40         : in std_logic;
             rst         : in std_logic;
             ipbus_in    : in ipb_wbus;
             ipbus_out   : out ipb_rbus;
@@ -118,6 +119,7 @@ begin
 	controladc: entity work.control_adc
 		port map(
 			clk => clock,
+			clk40 => clk40,
 			rst => reset,
 			ipbus_in => ipbus_in,
 			ipbus_out => ipbus_out,

@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Oct  4 22:51:46 2017
+# Process ID: 21211
+# Current directory: /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.runs/impl_3
+# Command line: vivado -log top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
+# Log file: /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.runs/impl_3/top.vdi
+# Journal file: /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.runs/impl_3/vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+
+*** Halting run - EA reset detected ***
+
+
+
+    while executing
+"start_step init_design"
+    (file "top.tcl" line 49)
+INFO: [Common 17-206] Exiting Vivado at Wed Oct  4 22:51:54 2017...
