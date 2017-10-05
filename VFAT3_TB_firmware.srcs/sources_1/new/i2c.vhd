@@ -421,7 +421,7 @@ begin
                                 if (sda_i = '0') then
                                     data_cnt <= 7;
                                     wstart <= '0';
-                                    din <= (0 => '1', others => '0'); -- LSB for configuration register.
+                                    din <= (0 => '0', others => '0'); -- LSB for configuration register.
                                     state <= WR;
     
                                 -- or error

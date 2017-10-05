@@ -2,8 +2,8 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
 # IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
-# Start of session at: Wed Oct  4 23:37:16 2017
-# Process ID: 29316
+# Start of session at: Thu Oct  5 15:11:26 2017
+# Process ID: 23532
 # Current directory: /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.runs/impl_3
 # Command line: vivado -log top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
 # Log file: /home/a0312687/program_files/test/VFAT3-TB-Firmware/VFAT3_TB_firmware.runs/impl_3/top.vdi
