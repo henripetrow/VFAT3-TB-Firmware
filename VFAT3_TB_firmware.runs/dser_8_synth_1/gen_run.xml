@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="dser_8_synth_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1506957899">
-  <File Type="VDS-TIMING-PB" Name="dser_8_timing_summary_synth.pb"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="dser_8_timing_summary_synth.rpt"/>
-  <File Type="RDS-DCP" Name="dser_8.dcp"/>
   <File Type="RDS-UTIL-PB" Name="dser_8_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="dser_8.dcp"/>
   <File Type="RDS-UTIL" Name="dser_8_utilization_synth.rpt"/>
   <File Type="RDS-PROPCONSTRS" Name="dser_8_drc_synth.rpt"/>
   <File Type="RDS-RDS" Name="dser_8.vds"/>
+  <File Type="VDS-TIMING-PB" Name="dser_8_timing_summary_synth.pb"/>
   <File Type="PA-TCL" Name="dser_8.tcl"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="dser_8_timing_summary_synth.rpt"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/dser_8">
     <File Path="$PSRCDIR/sources_1/ip/dser_8/dser_8.xci">
       <FileInfo>

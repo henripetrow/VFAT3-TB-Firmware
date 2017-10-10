@@ -23,7 +23,7 @@ generic(
     -- Input frequency clock
     IN_FREQ     : integer := 40_000_000;
     -- SCL frequency clock
-    OUT_FREQ    : integer := 400_000
+    OUT_FREQ    : integer := 100_000
     
 );
 port(
@@ -264,8 +264,8 @@ begin
                         if (high_clk = '1') then
                             -- Slave controls the line
                             dout(data_cnt) <= sda_i;
-                            sda_o <= '1';
-                            sda_tri_o <= '1';
+                            --sda_o <= '1';
+                            --sda_tri_o <= '1';
                             -- If all the data has been read, send acknowledgment
                             if (data_cnt = 8) then
                                 state <= ACK_1;
@@ -277,7 +277,8 @@ begin
                     -- Send the read ackownledgment 
                     when ACK_1 => 
                        -- On the falling clock, take back control
-                        if (falling_clk = '1') then
+                        --if (falling_clk = '1') then
+                        if (low_clk = '1') then
                             -- Master controls the line
                             sda_o <= '0';
                             sda_tri_o <= '0';
@@ -287,6 +288,7 @@ begin
                     -- the signal would be sent to soon
                     when RST_1 => 
                         -- Wait for a low clock
+                        --if (low_clk = '1') then
                         if (low_clk = '1') then
                             -- Slave controls the line (used to be master so lines were pulled low.)
                             sda_o <= '1';
@@ -377,7 +379,7 @@ begin
                                 case wstart is
                                     when '1' => 
                                         data_cnt <= 7;
-                                        din <= (0 => '0', others => '0');
+                                        din <= (7 => '1', 2 => '1', others => '0'); -- MSB of the config register
                                         state <= WR_15_8BITS;
                                     when others => state <= ENDING_WR;
                                 end case;
@@ -410,7 +412,7 @@ begin
                                 sda_tri_o <= '1';
                                 state <= ACK_3;
                             end if;                        
-                        -- Read the write ackownledgment
+                        -- Read the write acknowledgment
                         when ACK_3 => 
                             -- On the high clock
                             if (high_clk = '1') then
@@ -421,7 +423,7 @@ begin
                                 if (sda_i = '0') then
                                     data_cnt <= 7;
                                     wstart <= '0';
-                                    din <= (0 => '0', others => '0'); -- LSB for configuration register.
+                                    din <= (7 => '0', 5 => '0',0 => '0',others => '0'); -- LSB for configuration register.
                                     state <= WR;
     
                                 -- or error
@@ -447,7 +449,7 @@ begin
                             
                             case rw_n is
                                 when '1' => data_o <= dout;
-                                 when others => data_o <= (others => '0');
+                                 when others => null;
                             end case;
                             valid_o <= '1';
                             error_o <= '0';

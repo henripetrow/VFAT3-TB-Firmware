@@ -321,12 +321,13 @@ set_property PACKAGE_PIN AB29 [get_ports rx_p]
 set_property IOSTANDARD LVCMOS12 [get_ports sda]
 set_property IOSTANDARD LVCMOS12 [get_ports scl]
 #V3
-#set_property PACKAGE_PIN AD23 [get_ports sda]
-#set_property PACKAGE_PIN AE24 [get_ports scl]
+set_property PACKAGE_PIN AD23 [get_ports sda]
+set_property PACKAGE_PIN AE24 [get_ports scl]
 
 #V2
-set_property PACKAGE_PIN AF20 [get_ports sda]
-set_property PACKAGE_PIN AF21 [get_ports scl]
+#set_property PACKAGE_PIN AF20 [get_ports sda]
+#set_property PACKAGE_PIN AF21 [get_ports scl]
+
 
 
 set_property C_CLK_INPUT_FREQ_HZ 300000000 [get_debug_cores dbg_hub]

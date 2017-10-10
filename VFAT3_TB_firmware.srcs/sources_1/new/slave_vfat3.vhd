@@ -301,8 +301,8 @@ begin
 		clk_div_in 				=> clk40,
 		io_reset 				=> '0', -- ?
 		data_out_to_pins 		=> tx,
---		data_out_from_device 	=> reverse_vector(ser_d_in)
-		data_out_from_device 	=> reverse_vector(inverse_vector(ser_d_in))
+		data_out_from_device 	=> reverse_vector(ser_d_in)
+--		data_out_from_device 	=> reverse_vector(inverse_vector(ser_d_in))
 	);
     
 -- #### OUTPUT FIFO	

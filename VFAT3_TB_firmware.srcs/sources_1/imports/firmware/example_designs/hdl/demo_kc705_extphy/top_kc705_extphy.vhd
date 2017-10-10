@@ -68,9 +68,9 @@ begin
 
 --	DCM clock generation for internal bus, ethernet
 	
-	bor_disable <= '1';
-	por_disable <= '1';
-	mon_clk_en <= '1';
+--	bor_disable <= '1';
+--	por_disable <= '1';
+--	mon_clk_en <= '1';
 	
 	clocks: entity work.clocks_7s_extphy
 		port map(

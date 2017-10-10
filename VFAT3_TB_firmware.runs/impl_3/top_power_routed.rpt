@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
-| Date             : Thu Oct  5 15:22:59 2017
+| Date             : Tue Oct 10 08:05:45 2017
 | Host             : lut4431 running 64-bit unknown
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -50,19 +50,19 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.049 |       12 |       --- |             --- |
+| Clocks                   |     0.050 |       12 |       --- |             --- |
 | Slice Logic              |     0.007 |    21341 |       --- |             --- |
-|   LUT as Logic           |     0.006 |     7181 |    203800 |            3.52 |
-|   Register               |    <0.001 |     9851 |    407600 |            2.42 |
+|   LUT as Logic           |     0.006 |     7202 |    203800 |            3.53 |
+|   Register               |    <0.001 |     9854 |    407600 |            2.42 |
 |   CARRY4                 |    <0.001 |      353 |     50950 |            0.69 |
 |   LUT as Shift Register  |    <0.001 |      602 |     64000 |            0.94 |
 |   F7/F8 Muxes            |    <0.001 |      325 |    203800 |            0.16 |
 |   LUT as Distributed RAM |    <0.001 |       32 |     64000 |            0.05 |
 |   Others                 |     0.000 |     1680 |       --- |             --- |
-| Signals                  |     0.014 |    16644 |       --- |             --- |
-| Block RAM                |     0.029 |      302 |       445 |           67.87 |
+| Signals                  |     0.014 |    16623 |       --- |             --- |
+| Block RAM                |     0.028 |      302 |       445 |           67.87 |
 | MMCM                     |     0.211 |        2 |        10 |           20.00 |
-| I/O                      |     0.163 |       73 |       500 |           14.60 |
+| I/O                      |     0.163 |       70 |       500 |           14.00 |
 | Static Power             |     0.183 |          |           |                 |
 | Total                    |     0.656 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
@@ -74,7 +74,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.181 |       0.103 |      0.078 |
+| Vccint    |       1.000 |     0.182 |       0.104 |      0.078 |
 | Vccaux    |       1.800 |     0.164 |       0.135 |      0.028 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.051 |       0.050 |      0.001 |
@@ -239,48 +239,48 @@ Table of Contents
 |         U_SYNC                                                                                     |    <0.001 |
 |       SWITCH_N_EXT_BSCAN.bscan_inst                                                                |    <0.001 |
 |       SWITCH_N_EXT_BSCAN.bscan_switch                                                              |    <0.001 |
-|   eth                                                                                              |     0.019 |
+|   eth                                                                                              |     0.020 |
 |     emac0                                                                                          |     0.006 |
 |       U0/trimac_top/TRI_SPEED.TRIMAC_INST                                                          |     0.006 |
-|     fifo                                                                                           |     0.002 |
+|     fifo                                                                                           |     0.003 |
 |       U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1  |    <0.001 |
 |       U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM21 |    <0.001 |
 |       U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM22 |    <0.001 |
 |       U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM23 |    <0.001 |
 |       U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM24 |    <0.001 |
-|   ipbus                                                                                            |     0.041 |
+|   ipbus                                                                                            |     0.042 |
 |     trans                                                                                          |     0.003 |
 |       iface                                                                                        |     0.002 |
 |       sm                                                                                           |     0.002 |
-|     udp_if                                                                                         |     0.037 |
+|     udp_if                                                                                         |     0.039 |
 |       ARP                                                                                          |    <0.001 |
 |       IPADDR                                                                                       |    <0.001 |
 |       RARP_block                                                                                   |    <0.001 |
 |       clock_crossing_if                                                                            |    <0.001 |
-|       internal_ram                                                                                 |     0.003 |
+|       internal_ram                                                                                 |     0.002 |
 |       internal_ram_selector                                                                        |    <0.001 |
 |       internal_ram_shim                                                                            |    <0.001 |
 |       ipbus_rx_ram                                                                                 |     0.006 |
 |       ipbus_tx_ram                                                                                 |     0.007 |
 |       payload                                                                                      |     0.002 |
-|       ping                                                                                         |    <0.001 |
+|       ping                                                                                         |     0.001 |
 |       resend                                                                                       |    <0.001 |
 |       rx_byte_sum                                                                                  |    <0.001 |
-|       rx_packet_parser                                                                             |     0.003 |
+|       rx_packet_parser                                                                             |     0.004 |
 |       rx_ram_mux                                                                                   |    <0.001 |
 |       rx_ram_selector                                                                              |    <0.001 |
 |       rx_reset_block                                                                               |    <0.001 |
 |       rx_transactor                                                                                |    <0.001 |
-|       status                                                                                       |     0.001 |
+|       status                                                                                       |     0.002 |
 |       status_buffer                                                                                |     0.003 |
 |       tx_byte_sum                                                                                  |    <0.001 |
 |       tx_main                                                                                      |     0.003 |
 |       tx_ram_selector                                                                              |     0.001 |
 |       tx_transactor                                                                                |     0.002 |
 |   sda_io                                                                                           |    <0.001 |
-|   slaves                                                                                           |     0.041 |
+|   slaves                                                                                           |     0.040 |
 |     fabric                                                                                         |    <0.001 |
-|     slaveadc                                                                                       |     0.009 |
+|     slaveadc                                                                                       |     0.010 |
 |       chipscope1                                                                                   |     0.009 |
 |         U0                                                                                         |     0.009 |
 |           ila_core_inst                                                                            |     0.009 |
@@ -658,7 +658,7 @@ Table of Contents
 |             xsdb_memory_read_inst                                                                  |    <0.001 |
 |       controladc                                                                                   |    <0.001 |
 |       i2c_i                                                                                        |    <0.001 |
-|     slavevfat3                                                                                     |     0.032 |
+|     slavevfat3                                                                                     |     0.031 |
 |       chipscope                                                                                    |     0.010 |
 |         U0                                                                                         |     0.010 |
 |           ila_core_inst                                                                            |     0.010 |
@@ -1125,11 +1125,11 @@ Table of Contents
 |       des                                                                                          |     0.001 |
 |         inst                                                                                       |     0.001 |
 |       dsersync                                                                                     |    <0.001 |
-|       fifo_in                                                                                      |     0.006 |
-|         U0                                                                                         |     0.006 |
-|           inst_fifo_gen                                                                            |     0.006 |
-|             gconvfifo.rf                                                                           |     0.006 |
-|               grf.rf                                                                               |     0.006 |
+|       fifo_in                                                                                      |     0.005 |
+|         U0                                                                                         |     0.005 |
+|           inst_fifo_gen                                                                            |     0.005 |
+|             gconvfifo.rf                                                                           |     0.005 |
+|               grf.rf                                                                               |     0.005 |
 |                 gntv_or_sync_fifo.gcx.clkx                                                         |    <0.001 |
 |                   gnxpm_cdc.gsync_stage[1].rd_stg_inst                                             |    <0.001 |
 |                   gnxpm_cdc.gsync_stage[1].wr_stg_inst                                             |    <0.001 |
@@ -1146,11 +1146,11 @@ Table of Contents
 |                     c1                                                                             |    <0.001 |
 |                     c2                                                                             |    <0.001 |
 |                   wpntr                                                                            |    <0.001 |
-|                 gntv_or_sync_fifo.mem                                                              |     0.004 |
-|                   gbm.gbmg.gbmga.ngecc.bmg                                                         |     0.004 |
-|                     inst_blk_mem_gen                                                               |     0.004 |
-|                       gnbram.gnativebmg.native_blk_mem_gen                                         |     0.004 |
-|                         valid.cstr                                                                 |     0.004 |
+|                 gntv_or_sync_fifo.mem                                                              |     0.003 |
+|                   gbm.gbmg.gbmga.ngecc.bmg                                                         |     0.003 |
+|                     inst_blk_mem_gen                                                               |     0.003 |
+|                       gnbram.gnativebmg.native_blk_mem_gen                                         |     0.003 |
+|                         valid.cstr                                                                 |     0.003 |
 |                           has_mux_b.B                                                              |    <0.001 |
 |                           ramloop[0].ram.r                                                         |    <0.001 |
 |                             prim_noinit.ram                                                        |    <0.001 |
@@ -1369,11 +1369,11 @@ Table of Contents
 |                   ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].wrst_inst                         |    <0.001 |
 |                   ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst                         |    <0.001 |
 |                   ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst                         |    <0.001 |
-|       fifo_out                                                                                     |     0.011 |
-|         U0                                                                                         |     0.011 |
-|           inst_fifo_gen                                                                            |     0.011 |
-|             gconvfifo.rf                                                                           |     0.011 |
-|               grf.rf                                                                               |     0.011 |
+|       fifo_out                                                                                     |     0.010 |
+|         U0                                                                                         |     0.010 |
+|           inst_fifo_gen                                                                            |     0.010 |
+|             gconvfifo.rf                                                                           |     0.010 |
+|               grf.rf                                                                               |     0.010 |
 |                 gntv_or_sync_fifo.gcx.clkx                                                         |    <0.001 |
 |                   gnxpm_cdc.gsync_stage[1].rd_stg_inst                                             |    <0.001 |
 |                   gnxpm_cdc.gsync_stage[1].wr_stg_inst                                             |    <0.001 |
@@ -1385,7 +1385,7 @@ Table of Contents
 |                     c1                                                                             |    <0.001 |
 |                   grhf.rhf                                                                         |    <0.001 |
 |                   rpntr                                                                            |    <0.001 |
-|                 gntv_or_sync_fifo.gl0.wr                                                           |     0.002 |
+|                 gntv_or_sync_fifo.gl0.wr                                                           |     0.001 |
 |                   gwas.wsts                                                                        |    <0.001 |
 |                     c1                                                                             |    <0.001 |
 |                     c2                                                                             |    <0.001 |

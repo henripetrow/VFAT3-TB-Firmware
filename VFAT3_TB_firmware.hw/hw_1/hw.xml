@@ -73,12 +73,13 @@
     <Object name="slaves/slave_vfat3/ser_d_in[7:0]" gui_info=""/>
     <Object name="slaves/slaveadc/clock" gui_info=""/>
     <Object name="slaves/slaveadc/data_valid" gui_info=""/>
-    <Object name="slaves/slaveadc/enable" gui_info=""/>
-    <Object name="slaves/slaveadc/ipbus_in[ipb_strobe]" gui_info="Trigger Setup=0"/>
+    <Object name="slaves/slaveadc/enable" gui_info="Trigger Setup=0"/>
+    <Object name="slaves/slaveadc/ipbus_in[ipb_strobe]" gui_info=""/>
     <Object name="slaves/slaveadc/ipbus_in[ipb_write]" gui_info=""/>
     <Object name="slaves/slaveadc/r_w" gui_info=""/>
     <Object name="slaves/slaveadc/scl_i" gui_info=""/>
     <Object name="slaves/slaveadc/sda_oi" gui_info=""/>
+    <Object name="slaves/slaveadc/wstart" gui_info=""/>
     <Object name="slaves/slavevfat3/fifo_out_r_en" gui_info="Trigger Setup=0"/>
     <Object name="slaves/slavevfat3/sync_flag" gui_info=""/>
   </ObjectList>
@@ -1091,7 +1092,7 @@
     <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
-        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;b1"/>
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
@@ -1099,7 +1100,7 @@
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
-        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;b1"/>
       </probeOptions>
       <nets>
         <net name="slaves/slaveadc/enable"/>
@@ -1242,7 +1243,7 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
-        <Option Id="MAP" value="probe1[0]"/>
+        <Option Id="MAP" value="probe6[0]"/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -1276,7 +1277,7 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
-        <Option Id="MAP" value="probe2[0]"/>
+        <Option Id="MAP" value="probe7[0]"/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -1286,7 +1287,7 @@
         <net name="slaves/slaveadc/r_w"/>
       </nets>
     </probe>
-    <probe type="ila_data" busType="net" source="netlist" spec="ILA_DATA_V2_RT">
+    <probe type="ila_data" busType="bus" source="netlist" spec="ILA_DATA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
@@ -1455,6 +1456,23 @@
       </probeOptions>
       <nets>
         <net name="slaves/slaveadc/sda_oi"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe3[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+      </probeOptions>
+      <nets>
+        <net name="slaves/slaveadc/wstart"/>
       </nets>
     </probe>
     <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">

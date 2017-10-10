@@ -42,8 +42,9 @@ end control_adc;
 architecture Behavioral of control_adc is
 
     signal start_meas : std_logic;
+    signal run_meas : std_logic;
     signal flag : std_logic;
-	type m_state_type is (IDLE,W_1, W, R, RESET);
+	type m_state_type is (IDLE,W_1, W, R1, R, RESET);
 	type state_type is (IDLE, RESET);
 	signal state 	: state_type;
 	signal m_state 	: m_state_type;
@@ -71,17 +72,17 @@ begin
 							if ipbus_in.ipb_addr = X"00004000" then
 								ipbus_out <= (ipb_ack => '1', ipb_err => '0', ipb_rdata => fresh_data);
 								state <= RESET;
-								
-
+							
 							end if;
 						end if;
 						if ipbus_in.ipb_strobe = '1' and ipbus_in.ipb_write = '1' then
                                 if ipbus_in.ipb_addr = X"00004001" then
                                     start_meas <= '1';
+                                    run_meas <= ipbus_in.ipb_wdata(0);
                                     ipbus_out <= (ipb_ack => '1', ipb_err => '0', ipb_rdata => (others => '0'));
                                     state <= RESET;
                                 end if;
-						end if;											
+                        end if;										
 										
 					when RESET =>
 						ipbus_out <= (ipb_ack => '0', ipb_err => '0', ipb_rdata => (others => '0'));
@@ -94,55 +95,60 @@ begin
 	process(clk)
 	begin
 		if rising_edge(clk) then
-			if start_meas = '1' then
-			    m_state <= IDLE;
-                wdata <= (0 => '1', others => '0'); -- Register address.
-                w_start <= '1';
-                rw <= '0';
-                en <= '1';
-                --if data_valid = '1' then
-                    flag <= '1';
-                --end if;
-			else
-				case m_state is
-					when IDLE =>
-                         wdata <= (others => '0'); -- Register address.
-                         rw <= '0';
-                         en <= '1';
-                         m_state <= W_1;
-									
-                    when W_1 =>
-                        en <= '0';
-                        m_state <= W;
-						
-                    when W =>
-                        if data_valid = '1' then
+		    if run_meas = '1' then
+                if start_meas = '1' then
+                    m_state <= IDLE;
+                    wdata <= (0 => '1', others => '0'); -- Register address.
+                    w_start <= '1';
+                    rw <= '0';
+                    en <= '1';
+                    --if data_valid = '1' then
+                        flag <= '1';
+                    --end if;
+                else
+                    case m_state is
+                        when IDLE =>
+                             wdata <= (others => '0'); -- Register address.
+                             rw <= '0';
+                             en <= '1';
+                             m_state <= W_1;
+                                        
+                        when W_1 =>
+                            en <= '0';
+                            m_state <= W;
+                            
+                        when W =>
+                            if data_valid = '1' then
+                                rw <= '1';
+                                en <= '1';
+                                m_state <= R;
+                            end if;
+                            if error = '1' then
+                                m_state <= RESET;
+                            end if;
+                        when R1 =>
                             rw <= '1';
                             en <= '1';
-                            m_state <= R;
-                        end if;
-                        if error = '1' then
-                            m_state <= RESET;
-                        end if;
-                                               
-					when R =>
-					    en <= '0';
-						if data_valid = '1' then
-						    fresh_data <= rdata;
-							m_state <= RESET;
-						end if;
-						if error = '1' then
-                            m_state <= RESET;
-                        end if;
-											
-					when RESET =>
-					    
-						w_start <= '0';
-						en <= '0';
-						rw <= '0';
-						m_state <= IDLE;
-				end case;
-			end if;
+                            m_state <= R;                                          
+                        when R =>
+                            en <= '0';
+                            if data_valid = '1' then
+                                fresh_data <= rdata;
+                                m_state <= RESET;
+                            end if;
+                            if error = '1' then
+                                m_state <= RESET;
+                            end if;
+                                                
+                        when RESET =>
+                            
+                            w_start <= '0';
+                            en <= '0';
+                            rw <= '0';
+                            m_state <= IDLE;
+                    end case;
+                end if;
+           end if;
 		end if;
 	end process;
 

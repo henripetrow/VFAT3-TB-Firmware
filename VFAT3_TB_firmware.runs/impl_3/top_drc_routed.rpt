@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
-| Date         : Thu Oct  5 15:22:43 2017
+| Date         : Tue Oct 10 08:05:27 2017
 | Host         : lut4431 running 64-bit unknown
 | Command      : report_drc -file top_drc_routed.rpt -pb top_drc_routed.pb -rpx top_drc_routed.rpx
 | Design       : top
@@ -24,7 +24,7 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 30
+             Violations found: 27
 +-----------+----------+-----------------------------------------------------+------------+
 | Rule      | Severity | Description                                         | Violations |
 +-----------+----------+-----------------------------------------------------+------------+
@@ -32,7 +32,7 @@ Table of Contents
 | CHECK-3   | Warning  | Report rule limit reached                           | 1          |
 | PDRC-153  | Warning  | Gated clock check                                   | 3          |
 | REQP-1839 | Warning  | RAMB36 async control check                          | 20         |
-| RPBF-3    | Warning  | IO port buffering is incomplete                     | 4          |
+| RPBF-3    | Warning  | IO port buffering is incomplete                     | 1          |
 | RTSTAT-10 | Warning  | No routable loads                                   | 1          |
 +-----------+----------+-----------------------------------------------------+------------+
 
@@ -172,21 +172,6 @@ The RAMB36E1 slaves/slavevfat3/fifo_in/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv
 Related violations: <none>
 
 RPBF-3#1 Warning
-IO port buffering is incomplete  
-Device port bor_disable expects both input and output buffering but the buffers are incomplete.
-Related violations: <none>
-
-RPBF-3#2 Warning
-IO port buffering is incomplete  
-Device port mon_clk_en expects both input and output buffering but the buffers are incomplete.
-Related violations: <none>
-
-RPBF-3#3 Warning
-IO port buffering is incomplete  
-Device port por_disable expects both input and output buffering but the buffers are incomplete.
-Related violations: <none>
-
-RPBF-3#4 Warning
 IO port buffering is incomplete  
 Device port vfat_reset expects both input and output buffering but the buffers are incomplete.
 Related violations: <none>

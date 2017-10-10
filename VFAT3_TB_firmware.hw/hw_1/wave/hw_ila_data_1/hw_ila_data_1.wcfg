@@ -10,7 +10,7 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="5800001fs"></ZoomEndTime>
+      <ZoomEndTime time="2661fs"></ZoomEndTime>
       <Cursor1Time time="6409000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
@@ -38,13 +38,6 @@
       <obj_property name="DisplayName">FullPathName</obj_property>
       <obj_property name="ElementShortName">slaves/slaveadc/clock</obj_property>
       <obj_property name="ObjectShortName">clock</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="slaves/slaveadc/reset">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">slaves/slaveadc/reset</obj_property>
-      <obj_property name="ObjectShortName">reset</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
    </wvobject>
@@ -123,6 +116,12 @@
       <obj_property name="ElementShortName">slaves/slaveadc/rdata[31:0]</obj_property>
       <obj_property name="ObjectShortName">rdata[31:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="slaves/slaveadc/wstart">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">slaves/slaveadc/wstart</obj_property>
+      <obj_property name="ObjectShortName">wstart</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
    </wvobject>
 </wave_config>

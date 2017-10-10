@@ -163,7 +163,7 @@ begin
                 probe0     => ipbus_in.ipb_strobe,
                 probe1     => ipbus_in.ipb_write,
                 probe2     => clock,
-                probe3     => reset,
+                probe3     => wstart,
                 probe4     => enable,
                 probe5     => rdata,
                 probe6     => ipbus_in.ipb_write,
